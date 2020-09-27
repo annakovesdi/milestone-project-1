@@ -6,6 +6,7 @@ body {
     font-family: "Open sans", sans-serif;
     color: rgb(105,21,17);
     font-weight: 400;
+    font-size: 16px;
 }
 
 h5 {
@@ -17,6 +18,10 @@ h5 {
 
 /*-------------------------------------------heading*/
 
+
+.navbar {
+    border: 1px solid rgb(105,21,17);
+}
 
 .logo {
     background: url("../img/logo-d.jpg");
@@ -39,7 +44,7 @@ h5 {
     font-family: "Open Sans";
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .mt-2, .my-2 {
@@ -70,28 +75,50 @@ button:focus {
 /*-------------------------------------------footer*/
 
 .footer-address {
-    padding: 10px 0px 10px 50px;
+    padding: 14px 0px 10px 50px;
+    text-align: center;
+}
+
+.footer-address-text {
+    font-size: 12px;
+    
 }
 
 .footer-social {
-    text-align: center;
-    padding: 14px 10px 10px 10px;
+    text-align: right;
+    padding: 14px 16px 10px 10px;
 }
 
 .social-icon {
     color: rgb(53, 5, 0);
     font-size: 30px;
+    font-size: 20px;
+    padding-right: 25px;
 }
 
+.footer-border {
+    border: 1px solid rgb(105,21,17);
+}
+
+/*-------------------------------------------index*/
+
+.hero-image {
+    background-image: url("../img/casacapello2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 350px;
+    width: 100%;
+    background-size: cover;
+    }
 
 /*-------------------------------------------media query*/
 
-@media (min-width: 575px) {
+/*@media(min-width: 575px) {
   .navbar-light .navbar-nav .nav-link {
     font-size: 16px;
   }
 
-  /*@media (min-width: 1200px) {
-  .navbar-light .navbar-nav .nav-link {
-    font-size: 14px;
+/*@media(max-width: 575px) {
+    .footer-address .footer-social {
+    font-size: 9px;
   }
