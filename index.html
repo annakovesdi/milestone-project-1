@@ -10,7 +10,7 @@
 </head>
 <body>
 	<header>
-		<nav class="navbar navbar-expand-sm navbar-light sticky-top">
+		<nav class="navbar navbar-expand-md navbar-light fixed-top">
 			 <a class="logo grow" href="index.html">
             </a>
 			<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +23,7 @@
 						<a class="nav-link grow" href="overons.html">Over Ons</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link grow" href="index.html">Menu</a>
+						<a class="nav-link grow" href="menu.html">Menu</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link grow" href="wijnkaart.html">Wijnkaart</a>
@@ -39,17 +39,66 @@
 		</nav>
 	</header>
     <section>
-        <div class="hero-image">
+        <div class="section hero-image">
+            <div class="overlay">
+                <div class="title">
+                <h1>Ristorante Casa Capello</h1>
+                <h3>Casual Fine Dining</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section">
+            <div class="section-heading row justify-content-center">
+                <h4 class="col-6 col-md-4">Reserveer nu</h4>
+            </div>
+            <form class="reserve-form">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name" class="col-form-label">Naam</label> 
+                        <input type="name" id="name" name="name" placeholder="Naam" class="form-control" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email" class="col-form-label">Email Adres</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Email Adres" required>
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-group col-12">
+                        <label for="number">Personen</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="" disabled>Voor meer dan 6 personen reserveren? Neem dan telefonisch contact op!</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="date" class="col-form-label">Datum</label>
+                        <input id="date" name="date" class="form-control" placeholder="DD/MM/JJJJ" type="text" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="time" class="col-form-label">Tijd</label>
+                        <input type="time" id="time" name="time" min="12:00" max="21:00" class="form-control" required>
+                    </div>
+                </div>
+                <button class="btn btn-primary" name="submit" type="submit">Reserveren</button>
+            </form>
         </div>
     </section>
     <footer class="fixed-bottom footer-border">
         <div class="row">
             <div class="col-8 footer-address">
                 <div class="row">
-                    <h5 class="footer-address-text col-12 col-md-6 col-lg-4">Borneostraat 201, 2585 SC Den Haag</h5>
-                    <h5 class="footer-address-text d-none d-md-block col-md-6 col-lg-4">tel: 070-2250303</h5>
-                    <h5 class="footer-address-text d-none d-lg-block col-lg-4"> Di & Wo         17.00 - 22.00 uur <br>
-                                                                                Do & Vr & Za    12.00 - 22.00 uur</h5>
+                    <h5 class="footer-address-text col-12 col-md-6 col-lg-4"><i class="fas fa-map-marker footer-icon"></i> Borneostraat 201, 2585 SC Den Haag</h5>
+                    <h5 class="footer-address-text d-none d-md-block col-md-6 col-lg-4"><i class="fas fa-phone footer-icon"></i> tel: 070-2250303</h5>
+                    <h5 class="footer-address-text d-none d-lg-block col-lg-4"><i class="fas fa-lock-open footer-icon"></i>Di & Wo 17.00 - 22.00 uur <br> Do & Vr & Za 12.00 - 22.00 uur</h5>
                 </div>
             </div>
             <div class="col-4 footer-social">

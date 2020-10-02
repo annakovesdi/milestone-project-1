@@ -9,6 +9,36 @@ body {
     font-size: 16px;
 }
 
+h1 {
+    font-family: "Saira extra condensed", sans-serif;
+    font-weight: 400;
+    font-size: 56px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: "Saira extra condensed", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "Saira extra condensed", sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 10px 40px 10px 40px;
+    border: 1px solid #800000;
+    border-radius: 10px/20px;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(201,213,44,0.3)  0%,rgba(34,193,195,0.3) 100%);
+    align-content: center;
+}
+
 h5 {
     text-transform: uppercase;
     font-size: 16px;
@@ -16,11 +46,20 @@ h5 {
     font-weight: 300;
 }
 
+.section {
+    margin-top: 50px;
+}
+
+.section-heading {
+
+}
+
 /*-------------------------------------------heading*/
 
 
 .navbar {
     border: 1px solid rgb(105,21,17);
+    background-color: #fff;
 }
 
 .logo {
@@ -81,7 +120,7 @@ button:focus {
 
 .footer-address-text {
     font-size: 12px;
-    
+    margin: auto;
 }
 
 .footer-social {
@@ -98,6 +137,11 @@ button:focus {
 
 .footer-border {
     border: 1px solid rgb(105,21,17);
+    background-color: #fff;
+}
+
+.footer-icon {
+    padding: 5px;
 }
 
 /*-------------------------------------------index*/
@@ -106,19 +150,42 @@ button:focus {
     background-image: url("../img/casacapello2.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 350px;
+    min-height: 400px;
     width: 100%;
     background-size: cover;
-    }
+}
+
+.overlay {
+    height: 400px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    color: #fff;
+    position: relative;
+    margin-left: 3vw;
+}
+
+.reserve-form {
+    max-width: 60%;
+    padding-top: 50px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
 
 /*-------------------------------------------media query*/
 
-/*@media(min-width: 575px) {
-  .navbar-light .navbar-nav .nav-link {
-    font-size: 16px;
+@media(min-width: 992px) {
+  .hero-image {
+    min-height: 600px;
   }
 
-/*@media(max-width: 575px) {
+/*@media(min-width: 575px) {
     .footer-address .footer-social {
     font-size: 9px;
   }
