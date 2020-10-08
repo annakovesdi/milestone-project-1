@@ -7,11 +7,12 @@ body {
     color: rgb(105,21,17);
     font-weight: 400;
     font-size: 16px;
+    height: 100%;
 }
 
-html body {
-    min-height: 100vw; 
-    }
+html {
+    height: 100%;
+}
 
 h1 {
     font-family: "Saira extra condensed", sans-serif;
@@ -30,9 +31,10 @@ h3 {
 
 h4 {
     font-size: 30px;
+    color: rgb(149, 44, 29);
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     letter-spacing: 1px;
     text-align: center;
     padding: 10px 40px 10px 40px;
@@ -46,7 +48,7 @@ h5 {
 }
 
 .section {
-    margin-top: 50px;
+    margin-top: 150px;
     margin-bottom: 50px;
 }
 
@@ -80,6 +82,31 @@ div .text-align-right {
 div .text-align-left {
     text-align: left;
 }
+
+.padding-bottom {
+    padding-bottom: 50px;
+}
+/*-------------------------------------------backgrounds*/
+
+#wijnkaart {
+    background-image: url("../img/op3.png");
+    
+}
+
+#menu {
+    background-image: url("../img/1.png");
+    
+}
+
+#wijnkaart,
+#menu {
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 100%; 
+    height: 100%; 
+}
+
+
 /*-------------------------------------------heading*/
 
 
@@ -258,6 +285,25 @@ iframe {
     background-position: center;
     overflow: hidden;
     background-attachment: fixed;
+}
+/*-------------------------------------------menu/wijnkaart*/
+
+
+div .menu-item {
+    padding: 0px 10px 20px 10px;
+    margin-left: 20px;   
+}
+
+div .bold {
+    font-weight: 700;
+}
+
+div .right {
+    text-align: right;
+}
+
+div .left {
+    text-align: left;
 }
 
 
