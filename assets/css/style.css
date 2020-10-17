@@ -187,7 +187,7 @@ button:focus {
 /*-------------------------------------------footer*/
 
 div.col-8.footer-address {
-    padding: 15px 0px 15px 50px;
+    padding: 10px 0px 10px 40px;
     text-align: center;
 }
 
@@ -198,7 +198,7 @@ div.col-8.footer-address {
 
 .footer-social {
     text-align: right;
-    padding: 14px 16px 10px 10px;
+    margin: auto;
 }
 
 .social-icon {
@@ -219,31 +219,27 @@ div.col-8.footer-address {
 
 /*-------------------------------------------index*/
 
-.hero-image {
-    background-image: url("https://res.cloudinary.com/lavishnessjumpy/image/upload/v1602928486/1_oqas3j.jpg");
-    background-position: center 70%;
-    background-repeat: no-repeat;
-    min-height: 500px;
-    width: 100%;
-    background-size: cover;
-    animation-name: hero-image-animation;
-    animation-duration: 25s;
-    animation-delay: -2s;
-    animation-iteration-count: infinite;
-    margin-top: -40px;
-    margin-bottom: -70px;
+.hero {
+    margin-top: 50px;
+    width: 100vw;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -100px;
 }
 
-@keyframes hero-image-animation {
-  20%   {background-image: url("https://res.cloudinary.com/lavishnessjumpy/image/upload/v1602928486/1_oqas3j.jpg");}
-  40%  {background-image: url("https://res.cloudinary.com/lavishnessjumpy/image/upload/v1602928486/2_o5twmw.jpg");}
-  60%  {background-image: url("https://res.cloudinary.com/lavishnessjumpy/image/upload/v1602928486/3_lviypq.jpg");}
-  80%  {background-image: url("https://res.cloudinary.com/lavishnessjumpy/image/upload/v1602928486/4_bs1qos.jpg");}
-  100% {background-image: url("https://res.cloudinary.com/lavishnessjumpy/image/upload/v1602928486/5_ogvzhw.jpg");}
+
+#vimeohero iframe {
+    position: absolute;
+    width: 100vw;
+    overflow: hidden;
+    height: 56.25vw;
+    min-height: 100vh;
+    min-width: 177.77vh; 
 }
 
 .overlay {
-    height: 500px;
+    height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.35); 
     position: absolute;
@@ -277,6 +273,8 @@ div.col-8.footer-address {
 iframe.iframe {
     align-items: center;
     padding: 20px 100px 100px 100px;
+    max-height: 700px;
+    overflow: hidden;
 }
 /*-------------------------------------------over ons/reserveren*/
 
@@ -318,12 +316,14 @@ div .left {
 
 /*-------------------------------------------media query*/
 
-@media(min-width: 992px) {
- .hero-image {
-    min-height: 700px;
+@media only screen and (max-width: 600px) {
+  iframe.iframe {
+    padding: 20px 20px 100px 20px;
   }
+}
 
-@media(min-width: 992px) {
-  .overlay {
-    min-height: 700px;
+@media only screen and (min-width: 1400px) {
+  iframe.iframe {
+    padding: 70px 200px 100px 200px;
   }
+}
